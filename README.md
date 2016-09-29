@@ -5,4 +5,5 @@ Omron D6T is a MEMS IR sensor that has the distinct advantage of sensing human p
 Example Image from the Omron D6T 4x4 array:
 
 ![alt tag](ExampleImage.png?raw=true "Image Title")
+
 In this image the brighter pixels correspond to a warmer body.
