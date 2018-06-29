@@ -25,6 +25,7 @@ void loop()
       Wire.beginTransmission(D6T_addr);
       Wire.write(D6T_cmd);
       Wire.endTransmission();
+      delay(100);
       
       // This is where things are handled differently. Omron D6T output data is 35 bytes and there is a limit here on what Wire can receive. We use WireExt to read the output data 1 piece at a time. We store each byte as an element in rbuf.
       if (WireExt.beginReception(D6T_addr) >= 0) {
