@@ -31,6 +31,13 @@ extern "C" {
 
 #include "WireExt.h"
 
+#if defined (__AVR_ATmega328PB__)
+  #define TWBR TWBR0
+  #define TWCR TWCR0
+  #define TW_STATUS TWSR0
+  #define TWDR TWDR0
+#endif
+
 // Initialize Class Variables //////////////////////////////////////////////////
 
 // Constructors ////////////////////////////////////////////////////////////////
